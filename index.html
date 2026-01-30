@@ -1,324 +1,41 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>neXo | Soluciones Constructivas</title>  <!-- Tipografía -->  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">  <style>
-    :root {
-      --color-principal: #0f172a; /* slate-900 */
-      --color-secundario: #64748b; /* slate-500 */
-      --color-acento: #2563eb; /* blue-600 */
-      --color-fondo: #f8fafc; /* slate-50 */
-      --color-blanco: #ffffff;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estevez Solutions | Empresa de Construcción Civil</title>
+<meta name="description" content="MIPYME cubana de construcción civil, servicios técnicos y comercialización con enfoque profesional, eficiente y orientado a la calidad.">
+<link rel="icon" href="icono/favicon.ico">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header>
+  <strong>Estevez Solutions</strong>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="quienes.html">Quiénes Somos</a>
+    <a href="equipo.html">Equipo</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="contactos.html">Contactos</a>
+  </nav>
+</header>
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<div class="hero">
+  <div>
+    <h1>Soluciones integrales en construcción y servicios</h1>
+    <p>Calidad, eficiencia y compromiso en cada proyecto.</p>
+    <a href="quienes.html" class="btn">Conozca nuestra empresa</a>
+  </div>
+</div>
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--color-fondo);
-      color: var(--color-principal);
-      line-height: 1.6;
-    }
+<section>
+  <h2 class="titulo">Catálogo corporativo</h2>
+  <p style="text-align:center">Descargue nuestro catálogo completo de servicios.</p>
+  <div style="text-align:center">
+    <a class="btn" href="doc/catalogo-estevez-solutions.pdf" download>Descargar PDF</a>
+  </div>
+</section>
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    /* HEADER */
-    header {
-      background: var(--color-blanco);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-
-    .nav {
-      max-width: 1200px;
-      margin: auto;
-      padding: 1rem 1.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 1.4rem;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-    }
-
-    .menu {
-      display: flex;
-      gap: 1.5rem;
-      font-weight: 500;
-      font-size: 0.95rem;
-    }
-
-    .menu a:hover {
-      color: var(--color-acento);
-    }
-
-    /* HERO */
-    .hero {
-      max-width: 1200px;
-      margin: auto;
-      padding: 5rem 1.5rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 3rem;
-      align-items: center;
-    }
-
-    .hero h1 {
-      font-size: 2.8rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      color: var(--color-secundario);
-      font-size: 1.05rem;
-      margin-bottom: 2rem;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 0.9rem 1.8rem;
-      border-radius: 8px;
-      background: var(--color-acento);
-      color: var(--color-blanco);
-      font-weight: 600;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(37,99,235,0.3);
-    }
-
-    .hero-box {
-      background: linear-gradient(135deg, #2563eb, #1e40af);
-      height: 280px;
-      border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-    }
-
-    /* SECCIONES */
-    section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 4rem 1.5rem;
-    }
-
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 2.5rem;
-      text-align: center;
-    }
-
-    /* SERVICIOS */
-    .servicios {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-    }
-
-    .card {
-      background: var(--color-blanco);
-      padding: 2rem;
-      border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-      transition: transform 0.25s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-    }
-
-    .card h3 {
-      margin-bottom: 0.8rem;
-      font-size: 1.2rem;
-    }
-
-    .card p {
-      font-size: 0.95rem;
-      color: var(--color-secundario);
-    }
-
-    /* SOBRE NOSOTROS */
-    .sobre {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 3rem;
-      align-items: center;
-    }
-
-    .sobre p {
-      color: var(--color-secundario);
-      font-size: 1rem;
-    }
-
-    /* FOOTER */
-    footer {
-      background: var(--color-principal);
-      color: #cbd5f5;
-      padding: 3rem 1.5rem;
-      margin-top: 4rem;
-    }
-
-    .footer-content {
-      max-width: 1200px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 2rem;
-    }
-
-    footer h4 {
-      margin-bottom: 1rem;
-      color: var(--color-blanco);
-    }
-
-    footer p, footer a {
-      font-size: 0.9rem;
-      color: #cbd5f5;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    .copy {
-      text-align: center;
-      margin-top: 2rem;
-      font-size: 0.8rem;
-      color: #94a3b8;
-    }
-
-    /* ANIMACIÓN SUAVE */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease;
-    }
-
-    .fade-in.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style></head>
-<body>  <!-- HEADER -->  <header>
-    <div class="nav">
-      <div class="logo">neXo</div>
-      <nav class="menu">
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </div>
-  </header>  <!-- HERO -->  <section class="hero" id="inicio">
-    <div class="fade-in">
-      <h1>Arquitectura y construcción con visión contemporánea</h1>
-      <p>
-        Desarrollamos soluciones integrales de diseño, planificación y ejecución de obras,
-        combinando eficiencia técnica, estética y sostenibilidad.
-      </p>
-      <a href="#contacto" class="btn">Solicitar información</a>
-    </div>
-    <div class="hero-box fade-in"></div>
-  </section>  <!-- SERVICIOS -->  <section id="servicios">
-    <h2>Nuestros servicios</h2>
-    <div class="servicios">
-      <div class="card fade-in">
-        <h3>Diseño arquitectónico</h3>
-        <p>
-          Proyectos conceptuales, básicos y ejecutivos orientados a soluciones funcionales,
-          estéticas y económicamente viables.
-        </p>
-      </div>
-      <div class="card fade-in">
-        <h3>Dirección y gestión de obras</h3>
-        <p>
-          Control técnico, planificación de recursos, cronogramas y supervisión integral
-          durante todo el ciclo constructivo.
-        </p>
-      </div>
-      <div class="card fade-in">
-        <h3>Presupuestos y consultoría</h3>
-        <p>
-          Elaboración de presupuestos, análisis de costos, estudios de factibilidad
-          y asesoría técnica especializada.
-        </p>
-      </div>
-    </div>
-  </section>  <!-- SOBRE NOSOTROS -->  <section id="nosotros">
-    <h2>Quiénes somos</h2>
-    <div class="sobre">
-      <div class="fade-in">
-        <p>
-          neXo es un estudio de arquitectura y construcción orientado a la ejecución
-          de proyectos eficientes, modernos y adaptados al contexto local.
-          Nuestro enfoque integra diseño, técnica y gestión para garantizar resultados
-          de alta calidad.
-        </p>
-        <p>
-          Contamos con un equipo multidisciplinario con experiencia en obras civiles,
-          edificaciones, interiores y soluciones constructivas personalizadas.
-        </p>
-      </div>
-      <div class="hero-box fade-in"></div>
-    </div>
-  </section>  <!-- CONTACTO -->  <section id="contacto">
-    <h2>Contacto</h2>
-    <div class="servicios">
-      <div class="card fade-in">
-        <h3>Información general</h3>
-        <p>Email: info@nexo.com</p>
-        <p>Teléfono: +53 000 00000</p>
-        <p>Ubicación: Cuba / Caribe</p>
-      </div>
-      <div class="card fade-in">
-        <h3>Horarios</h3>
-        <p>Lunes a viernes</p>
-        <p>8:30 am – 5:00 pm</p>
-      </div>
-    </div>
-  </section>  <!-- FOOTER -->  <footer>
-    <div class="footer-content">
-      <div>
-        <h4>neXo</h4>
-        <p>Arquitectura · Construcción · Gestión</p>
-      </div>
-      <div>
-        <h4>Enlaces</h4>
-        <a href="#inicio">Inicio</a><br />
-        <a href="#servicios">Servicios</a><br />
-        <a href="#nosotros">Nosotros</a>
-      </div>
-      <div>
-        <h4>Legal</h4>
-        <p>Todos los derechos reservados.</p>
-      </div>
-    </div>
-    <div class="copy">© 2026 neXo</div>
-  </footer>  <script>
-    const elements = document.querySelectorAll('.fade-in');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-        }
-      });
-    }, { threshold: 0.2 });
-
-    elements.forEach(el => observer.observe(el));
-  </script></body>
+<footer>© 2026 Estevez Solutions</footer>
+</body>
 </html>
