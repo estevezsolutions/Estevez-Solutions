@@ -161,7 +161,6 @@ section{
 .carousel img.active{
   opacity:1;
 }
-
 /* FOOTER */
 footer{
   background:var(--gris);
