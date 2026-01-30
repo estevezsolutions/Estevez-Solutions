@@ -1,4 +1,4 @@
-// Validación simple del formulario
+// Formulario
 document.getElementById('contactForm').addEventListener('submit', function(e){
     e.preventDefault();
     const nombre = this.nombre.value.trim();
@@ -10,7 +10,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
         return;
     }
     
-    if(!validateEmail(email)){
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
         alert('Correo electrónico no válido.');
         return;
     }
@@ -19,36 +19,32 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
     this.reset();
 });
 
-function validateEmail(email){
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+// Carrusel de proyectos
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-item');
+const totalSlides = slides.length;
+function showSlide(index){
+    slides.forEach(s => s.style.display = 'none');
+    slides[index].style.display = 'block';
 }
+showSlide(currentSlide);
 
-// Slider automático testimonios
+document.getElementById('prev').addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+});
+document.getElementById('next').addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+});
+
+// Auto slider testimonios
 const slider = document.querySelector('.slider');
-let isDown = false, startX, scrollLeft;
-
-slider.addEventListener('mousedown', e => {
-    isDown = true;
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener('mouseleave', () => isDown = false);
-slider.addEventListener('mouseup', () => isDown = false);
-slider.addEventListener('mousemove', e => {
-    if(!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 2;
-    slider.scrollLeft = scrollLeft - walk;
-});
-
-// Auto-scroll testimonial cada 5s
-setInterval(() => {
-    if(slider) {
+let sliderInterval = setInterval(() => {
+    if(slider){
+        slider.scrollLeft += slider.offsetWidth;
         if(slider.scrollLeft + slider.offsetWidth >= slider.scrollWidth){
             slider.scrollLeft = 0;
-        } else {
-            slider.scrollLeft += slider.offsetWidth;
         }
     }
 }, 5000);
