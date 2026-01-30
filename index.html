@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estevez Solutions Company</title>
   <meta name="description" content="Estevez Solutions: Soluciones integrales en construcción, servicios técnicos y comercialización.">
-  
-  <!-- SEO OpenGraph -->
+
+  <!-- OpenGraph / SEO -->
   <meta property="og:title" content="Estevez Solutions Company">
   <meta property="og:description" content="Soluciones integrales en construcción, servicios técnicos y comercialización.">
   <meta property="og:image" content="img/logo.png">
@@ -17,10 +17,20 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- AOS Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/53XXXXXXXXX" target="_blank" class="whatsapp-btn" title="Contáctanos por WhatsApp">
+    <img src="img/whatsapp.svg" alt="WhatsApp">
+  </a>
+
   <!-- Header -->
-  <header class="header">
+  <header class="header" data-aos="fade-down">
     <div class="container">
       <img src="img/logo.png" alt="Estevez Solutions Logo" class="logo">
       <nav class="nav">
@@ -28,6 +38,7 @@
         <a href="#quienes">Quiénes Somos</a>
         <a href="#servicios">Servicios</a>
         <a href="#proyectos">Proyectos</a>
+        <a href="#testimonios">Clientes</a>
         <a href="#equipo">Equipo</a>
         <a href="#contacto">Contacto</a>
       </nav>
@@ -35,7 +46,7 @@
   </header>
 
   <!-- Hero -->
-  <section id="inicio" class="hero">
+  <section id="inicio" class="hero" data-aos="fade-up">
     <div class="container">
       <h1>Soluciones integrales en construcción, servicios y comercialización</h1>
       <p>Profesionalismo, eficiencia y confianza en cada proyecto.</p>
@@ -44,7 +55,7 @@
   </section>
 
   <!-- Quiénes Somos -->
-  <section id="quienes" class="section">
+  <section id="quienes" class="section" data-aos="fade-right">
     <div class="container">
       <h2>Quiénes Somos</h2>
       <p>Estevez Solutions es una MIPYME cubana dedicada a brindar soluciones integrales en construcción, servicios técnicos y comercialización, con un enfoque profesional y orientado a la calidad. Nos destacamos por la gestión responsable, cumplimiento de plazos y atención personalizada.</p>
@@ -52,19 +63,19 @@
   </section>
 
   <!-- Servicios -->
-  <section id="servicios" class="section bg-gray">
+  <section id="servicios" class="section bg-gray" data-aos="fade-left">
     <div class="container">
       <h2>Servicios</h2>
       <div class="grid">
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
           <h3>Construcción y Montaje</h3>
           <p>Proyectos de diversa complejidad, desde obras nuevas hasta remodelaciones y montajes técnicos especializados.</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
           <h3>Fabricación y Comercialización</h3>
           <p>Muebles, enseres domésticos, equipos de iluminación y electrodomésticos, con reparación incluida.</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
           <h3>Servicios Técnicos</h3>
           <p>Instalación y mantenimiento de sistemas eléctricos, fontanería, aire acondicionado y más, ejecutados por personal calificado.</p>
         </div>
@@ -73,19 +84,31 @@
   </section>
 
   <!-- Proyectos -->
-  <section id="proyectos" class="section">
+  <section id="proyectos" class="section" data-aos="fade-up">
     <div class="container">
       <h2>Proyectos Destacados</h2>
       <div class="grid">
-        <div class="card">Proyecto 1</div>
-        <div class="card">Proyecto 2</div>
-        <div class="card">Proyecto 3</div>
+        <div class="card" data-aos="flip-left">Proyecto 1</div>
+        <div class="card" data-aos="flip-left" data-aos-delay="100">Proyecto 2</div>
+        <div class="card" data-aos="flip-left" data-aos-delay="200">Proyecto 3</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios / Clientes -->
+  <section id="testimonios" class="section bg-gray" data-aos="fade-up">
+    <div class="container">
+      <h2>Clientes y Testimonios</h2>
+      <div class="slider">
+        <div class="testimonial">"Excelente servicio, cumplieron con todos los plazos." – Cliente A</div>
+        <div class="testimonial">"Profesionales y confiables, altamente recomendados." – Cliente B</div>
+        <div class="testimonial">"Soluciones integrales y atención personalizada." – Cliente C</div>
       </div>
     </div>
   </section>
 
   <!-- Equipo -->
-  <section id="equipo" class="section bg-gray">
+  <section id="equipo" class="section" data-aos="fade-right">
     <div class="container">
       <h2>Equipo</h2>
       <div class="grid">
@@ -97,7 +120,7 @@
   </section>
 
   <!-- Contacto -->
-  <section id="contacto" class="section">
+  <section id="contacto" class="section" data-aos="fade-left">
     <div class="container">
       <h2>Contacto</h2>
       <form id="contactForm">
@@ -106,19 +129,26 @@
         <textarea name="mensaje" placeholder="Mensaje" required></textarea>
         <button type="submit" class="btn-primary">Enviar</button>
       </form>
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
       <p>Email: contacto@estevezsolutions.com</p>
       <p>Teléfono: +53 5XXXXXXX</p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" data-aos="fade-up">
     <div class="container">
       <p>&copy; 2026 Estevez Solutions Company. Todos los derechos reservados.</p>
     </div>
   </footer>
 
   <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    AOS.init({ duration:1000, once:true });
+  </script>
 </body>
 </html>
