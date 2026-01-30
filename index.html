@@ -2,13 +2,14 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Estevez Solutions | Construcción</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estevez Solutions | Construcción Civil</title>
 <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
 <header>
-  <img src="icono/logo.png">
+  <img src="icono/logo.png" alt="Logo Estevez Solutions">
   <nav>
     <a href="index.html">Inicio</a>
     <a href="quienes.html">Quiénes Somos</a>
@@ -18,16 +19,27 @@
   </nav>
 </header>
 
-<div class="hero" style="background-image:url('imagenes/hero1.jpg')">
-  <div>
-    <h1>Construimos con calidad y compromiso</h1>
-    <a href="servicios.html" class="btn">Nuestros Servicios</a>
+<!-- Hero / Carrusel -->
+<div class="carousel">
+  <img src="imagenes/hero1.jpg" class="active">
+  <img src="imagenes/hero2.jpg">
+  <img src="imagenes/hero3.jpg">
+  <div class="hero">
+    <div>
+      <h1>Construimos con pasión y profesionalismo</h1>
+      <p>Desde proyectos residenciales hasta obras industriales, garantizamos calidad y eficiencia.</p>
+      <a href="servicios.html" class="btn">Conoce nuestros servicios</a>
+    </div>
   </div>
 </div>
 
+<!-- Sección Catálogo -->
 <section>
   <h2 class="titulo">Catálogo Corporativo</h2>
-  <div style="text-align:center">
+  <p style="text-align:center;max-width:600px;margin:auto;">
+    Descubre todos nuestros servicios, proyectos y soluciones constructivas en nuestro catálogo corporativo.
+  </p>
+  <div style="text-align:center;margin-top:20px;">
     <a href="doc/catalogo-estevez-solutions.pdf" download class="btn">
       Descargar Catálogo
     </a>
@@ -35,8 +47,9 @@
 </section>
 
 <footer>
-  © 2026 Estevez Solutions
+  ©  Estevez Solutions | Todos los derechos reservados
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
