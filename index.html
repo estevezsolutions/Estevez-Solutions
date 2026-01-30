@@ -2,23 +2,63 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Estevez Solutions | Construcción y Servicios</title>
 
-  <!-- SEO -->
-  <meta name="description" content="Estevez Solutions es una MIPYME cubana especializada en construcción civil, servicios técnicos y soluciones integrales.">
-  <meta name="keywords" content="construcción, servicios técnicos, obras civiles, Estevez Solutions">
+  <title>Estevez Solutions | Construcción y Servicios Técnicos</title>
+
+  <!-- SEO AVANZADO -->
+  <meta name="description" content="Estevez Solutions es una MIPYME cubana especializada en construcción civil, servicios técnicos, montajes e instalaciones con enfoque profesional y eficiente.">
+  <meta name="keywords" content="empresa de construcción, servicios técnicos, obras civiles, montaje de instalaciones, Estevez Solutions">
+  <meta name="author" content="Estevez Solutions">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Fuente -->
+  <!-- OPEN GRAPH (SEO INTERNACIONAL) -->
+  <meta property="og:title" content="Estevez Solutions | Construcción y Servicios">
+  <meta property="og:description" content="Soluciones integrales en construcción, servicios técnicos y montaje de obras.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://TU-USUARIO.github.io/TU-REPOSITORIO/">
+
+  <!-- FUENTE -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- SCHEMA.ORG – NIVEL INTERNACIONAL -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ConstructionCompany",
+    "name": "Estevez Solutions",
+    "url": "https://TU-USUARIO.github.io/TU-REPOSITORIO/",
+    "description": "MIPYME cubana dedicada a la construcción civil, servicios técnicos y soluciones integrales.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CU"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+53-XXXXXXXX",
+      "contactType": "customer service",
+      "availableLanguage": ["Spanish", "English"]
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Cuba"
+    },
+    "serviceType": [
+      "Construcción civil",
+      "Montaje de obras",
+      "Servicios técnicos",
+      "Instalaciones eléctricas",
+      "Fontanería",
+      "Aire acondicionado"
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header class="header">
   <div class="container nav">
     <div class="logo">Estevez<span>Solutions</span></div>
@@ -33,6 +73,8 @@
     </nav>
   </div>
 </header>
+
+<main>
 
 <!-- HERO -->
 <section id="inicio" class="hero">
@@ -61,18 +103,18 @@
   <div class="container">
     <h2 class="section-title">Servicios</h2>
     <div class="cards">
-      <div class="card reveal">
+      <article class="card reveal">
         <h3>Construcción Civil</h3>
         <p>Obras nuevas, ampliaciones, remodelaciones y montajes técnicos especializados.</p>
-      </div>
-      <div class="card reveal">
+      </article>
+      <article class="card reveal">
         <h3>Servicios Técnicos</h3>
-        <p>Electricidad, fontanería, climatización y mantenimiento integral.</p>
-      </div>
-      <div class="card reveal">
+        <p>Instalaciones eléctricas, fontanería, climatización y mantenimiento integral.</p>
+      </article>
+      <article class="card reveal">
         <h3>Comercialización</h3>
-        <p>Venta y reparación de muebles, equipos eléctricos y soluciones complementarias.</p>
-      </div>
+        <p>Fabricación, venta y reparación de muebles, equipos eléctricos y soluciones complementarias.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -82,14 +124,14 @@
   <div class="container">
     <h2 class="section-title">Equipo de Trabajo</h2>
     <div class="cards">
-      <div class="card reveal">
+      <article class="card reveal">
         <h3>Dirección Técnica</h3>
-        <p>Profesionales con experiencia en gestión y ejecución de obras.</p>
-      </div>
-      <div class="card reveal">
+        <p>Profesionales con experiencia en gestión, planificación y ejecución de obras.</p>
+      </article>
+      <article class="card reveal">
         <h3>Especialistas</h3>
         <p>Personal calificado con estricto apego a normas de calidad y seguridad.</p>
-      </div>
+      </article>
     </div>
   </div>
 </section>
@@ -106,7 +148,8 @@
   </div>
 </section>
 
-<!-- FOOTER -->
+</main>
+
 <footer class="footer">
   <p>© 2026 Estevez Solutions. Todos los derechos reservados.</p>
 </footer>
