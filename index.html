@@ -5,46 +5,111 @@
     <title>Estevez Solutions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- PRUEBA CRÍTICA -->
-    <link rel="stylesheet" href="estilos.css">
+    <!-- FUENTE -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
+<!-- ENCABEZADO -->
 <header class="header">
-    <h1>ESTEVEZ SOLUTIONS</h1>
+    <img src="img/logo.png" alt="Estevez Solutions" class="logo">
     <p class="slogan">Somos tu solución</p>
 </header>
 
+<!-- MENÚ FLOTANTE -->
 <nav class="menu">
-    <a href="#">Inicio</a>
-    <a href="#">Quiénes somos</a>
-    <a href="#">Equipo</a>
-    <a href="#">Servicios</a>
-    <a href="#">Contactos</a>
+    <a href="#inicio" class="activo">Inicio</a>
+    <a href="#quienes">Quiénes somos</a>
+    <a href="#equipo">Equipo</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contactos">Contactos</a>
 </nav>
 
-<section class="hero">
-    <h2>Soluciones modernas para proyectos profesionales</h2>
-</section>
-
-<section class="tarjeta">
-    <div class="titulo-vertical">QUIÉNES SOMOS</div>
-    <div class="contenido">
-        <p>Texto de prueba de la empresa.</p>
+<!-- HERO -->
+<section id="inicio" class="hero">
+    <div class="overlay">
+        <h1>Soluciones modernas para proyectos profesionales</h1>
     </div>
 </section>
 
-<section class="tarjeta">
-    <div class="titulo-vertical">SERVICIOS</div>
-    <div class="contenido">
-        <p>Texto de prueba de servicios.</p>
-    </div>
+<!-- CONTENIDO -->
+<main class="contenido">
+
+    <!-- QUIÉNES SOMOS -->
+    <section id="quienes" class="tarjeta">
+        <div class="titulo-vertical">QUIÉNES SOMOS</div>
+        <div class="contenido-tarjeta bio">
+            <img src="img/persona.jpg" alt="Director">
+            <div>
+                <h2>Nombre del Director</h2>
+                <p>Biografía breve del fundador de la empresa...</p>
+                <p>Descripción general de la empresa...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section id="equipo" class="tarjeta">
+        <div class="titulo-vertical">EQUIPO</div>
+        <div class="contenido-tarjeta">
+            <div class="miembro">
+                <img src="img/persona.jpg" alt="Miembro">
+                <div>
+                    <h3>Nombre del Profesional</h3>
+                    <p>Experiencia y rol en la empresa...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="tarjeta">
+        <div class="titulo-vertical">SERVICIOS</div>
+        <div class="contenido-tarjeta servicios">
+            <div class="servicio">
+                <img src="img/servicio1.jpg" alt="Servicio 1">
+                <h3>Servicio 1</h3>
+                <p>Descripción breve del servicio.</p>
+            </div>
+            <div class="servicio">
+                <img src="img/servicio2.jpg" alt="Servicio 2">
+                <h3>Servicio 2</h3>
+                <p>Descripción breve del servicio.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTOS -->
+    <section id="contactos" class="tarjeta">
+        <div class="titulo-vertical">CONTACTOS</div>
+        <div class="contenido-tarjeta">
+            <p>Nombre del contacto</p>
+            <p>Teléfono</p>
+            <a class="btn-whatsapp" href="https://wa.me/5355555555" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<!-- BOTÓN DOSSIER -->
+<section class="dossier">
+    <a href="docs/dossier.pdf" download>Descargar dossier</a>
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
     <p>Estevez Solutions — Somos tu solución</p>
 </footer>
 
+<script src="scripts.js"></script>
 </body>
 </html>
