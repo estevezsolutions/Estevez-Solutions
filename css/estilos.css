@@ -10,7 +10,7 @@ body {
     color: #333;
 }
 
-/* ENCABEZADO */
+/* ENCABEZADO - RECTANGULAR */
 .header {
     background: #e0e0e0;
     text-align: center;
@@ -19,6 +19,8 @@ body {
 
 .logo {
     width: 140px;
+    max-width: 90%;
+    height: auto;
 }
 
 .slogan {
@@ -28,34 +30,10 @@ body {
     font-weight: 600;
 }
 
-/* MENÚ */
-.menu {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    padding: 10px;
-    border-bottom: 2px solid #f28c28;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #f28c28;
-    padding: 8px 12px;
-    border: 1px solid #f28c28;
-    border-radius: 4px;
-    font-weight: 600;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,.1);
-}
-
-.menu a.activo {
-    background: #f28c28;
-    color: #fff;
-}
-
 /* HERO */
 .hero {
-    height: 70vh;
+    width: 100%;
+    height: 60vh;
     background: url("../img/hero.jpg") center/cover no-repeat;
     position: relative;
     display: flex;
@@ -64,26 +42,30 @@ body {
 }
 
 .overlay {
-    background: rgba(60,60,60,.5);
+    background: rgba(60,60,60,.4);
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 10px;
+    text-align: center;
 }
 
 .hero h1 {
     color: #f28c28;
-    font-size: 3rem;
-    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.2;
 }
 
-/* TARJETAS */
+/* TARJETAS - BORDES SUAVES Y RELIEVE */
 .tarjeta {
     display: flex;
     background: #fff;
-    margin: 6px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+    margin: 12px 0;
+    box-shadow: 0 6px 20px rgba(0,0,0,.15);
+    border-radius: 15px; /* SUAVE */
+    overflow: hidden;
 }
 
 /* TÍTULO VERTICAL */
@@ -94,6 +76,8 @@ body {
     padding: 20px 10px;
     font-weight: 700;
     color: #f28c28;
+    background: #fff;
+    min-width: 50px;
 }
 
 /* CONTENIDO TARJETA */
@@ -105,31 +89,34 @@ body {
 .bio {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .bio img {
     width: 140px;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 
 .miembro {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .miembro img {
     width: 100px;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 
 .servicios {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .servicio img {
     width: 100%;
-    border-radius: 6px;
+    border-radius: 10px;
 }
 
 /* WHATSAPP */
@@ -155,10 +142,10 @@ body {
     background: #f28c28;
     color: #fff;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
-/* FOOTER */
+/* FOOTER - RECTANGULAR */
 .footer {
     background: #e0e0e0;
     text-align: center;
@@ -167,6 +154,21 @@ body {
 
 /* RESPONSIVE */
 @media (max-width:768px){
+
+    /* HERO siempre ancho completo */
+    .hero {
+        height: 50vh;
+    }
+
+    .overlay {
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    /* TARJETAS se apilan verticalmente */
     .tarjeta {
         flex-direction: column;
     }
@@ -177,9 +179,22 @@ body {
         border-right: none;
         border-bottom: 4px solid #f28c28;
         text-align: center;
+        min-width: 100%;
+        padding: 15px 0;
     }
 
     .bio, .miembro, .servicios {
         flex-direction: column;
+        gap: 15px;
+    }
+
+    .bio img, .miembro img {
+        width: 100%;
+        max-width: 150px;
+        margin: 0 auto;
+    }
+
+    .servicio img {
+        width: 100%;
     }
 }
