@@ -30,10 +30,10 @@ body {
     font-weight: 600;
 }
 
-/* HERO / INICIO - APAISADO */
+/* HERO / INICIO - MÁS APAISADO */
 .hero {
     width: 100%;
-    height: 35vh; /* Más horizontal/apaisado */
+    height: 25vh; /* Más horizontal/apaisado */
     background: url("../img/hero.jpg") center/cover no-repeat;
     position: relative;
     display: flex;
@@ -55,7 +55,7 @@ body {
 
 .hero h1 {
     color: #f28c28;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.2;
 }
 
@@ -156,8 +156,9 @@ body {
 /* RESPONSIVE */
 @media (max-width:768px){
 
+    /* HERO */
     .hero {
-        height: 30vh; /* Hero apaisado también en móvil */
+        height: 20vh; /* Hero más bajo en móvil */
     }
 
     .overlay {
@@ -165,9 +166,10 @@ body {
     }
 
     .hero h1 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
+    /* TARJETAS */
     .tarjeta {
         flex-direction: column;
     }
