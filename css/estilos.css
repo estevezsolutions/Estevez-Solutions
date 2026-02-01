@@ -1,4 +1,6 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
 * {
     margin: 0;
     padding: 0;
@@ -76,18 +78,18 @@ body {
 /* =========================
    TARJETAS
 ========================= */
-/* =========================
-   TARJETAS
-========================= */
 .tarjeta {
     width: 100%;
-    background: #ffffff;           /* fondo blanco */
-    margin: 12px 0;                /* separación entre tarjetas */
-    padding: 28px 24px 28px 70px; /* espacio interno */
+    background: #ffffff;           
+    margin: 12px 0;                
+    padding: 28px 24px 28px 70px; 
     position: relative;
-    border-radius: 18px;           /* bordes suaves */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08); /* relieve */
+    border-radius: 18px;           
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /* LÍNEA NARANJA EN EL BORDE IZQUIERDO */
+    border-left: 6px solid #ff8c00;  
 }
 
 .tarjeta:hover {
@@ -100,21 +102,20 @@ body {
 ========================= */
 .titulo-vertical {
     position: absolute;
-    left: 0;
+    left: -6px; /* alineada con la línea del borde */
     top: 0;
     bottom: 0;
     width: 50px;
-    background: #ff8c00;
-    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #ff8c00;           /* color naranja */
     font-weight: 600;
     letter-spacing: 1px;
     
     /* LECTURA DE ABAJO HACIA ARRIBA */
-    writing-mode: vertical-lr;       /* cambia de rl a lr */
-    text-orientation: mixed;         /* mantiene letras normales */
+    writing-mode: vertical-lr;   
+    text-orientation: mixed;     
 }
 
 /* =========================
@@ -271,6 +272,8 @@ body {
         width: 44px;
         font-size: 0.75rem;
     }
+}
+
 @media (max-width: 480px) {
 
     .hero {
@@ -287,7 +290,7 @@ body {
         border-radius: 14px;
     }
 }
-}
+
 /* Optimización de renderizado */
 .hero,
 .tarjeta,
