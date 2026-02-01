@@ -1,4 +1,5 @@
-* {
+
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,13 +16,11 @@ body {
     background: #e0e0e0;
     text-align: center;
     padding: 20px;
-    border-radius: 0; /* RECTANGULAR */
+    border-radius: 0 0 15px 15px;
 }
 
 .logo {
     width: 140px;
-    max-width: 90%;
-    height: auto;
 }
 
 .slogan {
@@ -33,40 +32,38 @@ body {
 
 /* HERO */
 .hero {
-    width: 100%;
-    height: 60vh;
+    height: 70vh;
     background: url("../img/hero.jpg") center/cover no-repeat;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0; /* RECTANGULAR */
+    border-radius: 15px;
 }
 
 .overlay {
-    background: rgba(60,60,60,.4);
+    background: rgba(60,60,60,.5);
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 10px;
-    text-align: center;
+    border-radius: 15px;
 }
 
 .hero h1 {
     color: #f28c28;
-    font-size: 2.5rem;
-    line-height: 1.2;
+    font-size: 3rem;
+    text-align: center;
 }
 
-/* TARJETAS - BORDES SUAVES */
+/* TARJETAS */
 .tarjeta {
     display: flex;
     background: #fff;
     margin: 12px 0;
     box-shadow: 0 4px 15px rgba(0,0,0,.1);
-    border-radius: 15px; /* SUAVES */
+    border-radius: 15px;
     overflow: hidden;
 }
 
@@ -79,7 +76,6 @@ body {
     font-weight: 700;
     color: #f28c28;
     background: #fff;
-    min-width: 50px;
 }
 
 /* CONTENIDO TARJETA */
@@ -152,25 +148,11 @@ body {
     background: #e0e0e0;
     text-align: center;
     padding: 20px;
-    border-radius: 0; /* RECTANGULAR */
+    border-radius: 15px 15px 0 0;
 }
 
 /* RESPONSIVE */
 @media (max-width:768px){
-
-    .hero {
-        height: 50vh;
-        border-radius: 0;
-    }
-
-    .overlay {
-        padding: 0 20px;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
     .tarjeta {
         flex-direction: column;
     }
@@ -181,22 +163,9 @@ body {
         border-right: none;
         border-bottom: 4px solid #f28c28;
         text-align: center;
-        min-width: 100%;
-        padding: 15px 0;
     }
 
     .bio, .miembro, .servicios {
         flex-direction: column;
-        gap: 15px;
-    }
-
-    .bio img, .miembro img {
-        width: 100%;
-        max-width: 150px;
-        margin: 0 auto;
-    }
-
-    .servicio img {
-        width: 100%;
     }
 }
