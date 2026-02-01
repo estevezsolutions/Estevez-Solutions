@@ -264,6 +264,22 @@ body {
         width: 44px;
         font-size: 0.75rem;
     }
+@media (max-width: 480px) {
+
+    .hero {
+        height: 28vh;
+    }
+
+    .hero h1 {
+        font-size: 1.25rem;
+        padding: 0 10px;
+    }
+
+    .tarjeta {
+        margin: 10px 0;
+        border-radius: 14px;
+    }
+}
 }
 /* Optimización de renderizado */
 .hero,
