@@ -5,18 +5,13 @@
     <title>Estevez Solutions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Estilos -->
-    <link rel="stylesheet" href="estilos.css">
-
-    <!-- Iconos -->
+    <link rel="stylesheet" href="./estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-<!-- ENCABEZADO -->
 <header class="header">
     <div class="logo-area">
         <img src="img/logo.png" alt="Estevez Solutions">
@@ -24,7 +19,6 @@
     </div>
 </header>
 
-<!-- MENÚ FLOTANTE -->
 <nav class="menu-flotante">
     <a href="#inicio" class="activo">Inicio</a>
     <a href="#quienes">Quiénes somos</a>
@@ -33,91 +27,76 @@
     <a href="#contactos">Contactos</a>
 </nav>
 
-<!-- HERO -->
 <section id="inicio" class="hero">
     <div class="hero-overlay">
         <h1>Soluciones integrales para proyectos modernos</h1>
     </div>
 </section>
 
-<!-- CONTENIDO -->
 <main class="contenido">
 
-    <!-- QUIÉNES SOMOS -->
-    <section id="quienes" class="tarjeta">
-        <div class="titulo-vertical">QUIÉNES SOMOS</div>
+<section id="quienes" class="tarjeta">
+    <div class="titulo-vertical">QUIÉNES SOMOS</div>
+    <div class="contenido-tarjeta bio">
+        <img src="img/persona.jpg">
+        <div>
+            <h2>Nombre del Director</h2>
+            <p>Biografía breve del fundador...</p>
+            <p>Descripción general de la empresa...</p>
+        </div>
+    </div>
+</section>
 
-        <div class="contenido-tarjeta bio">
-            <img src="img/persona.jpg" alt="Director">
+<section id="equipo" class="tarjeta">
+    <div class="titulo-vertical">EQUIPO</div>
+    <div class="contenido-tarjeta">
+        <div class="miembro">
+            <img src="img/persona.jpg">
             <div>
-                <h2>Nombre del Director</h2>
-                <p>Breve biografía profesional del fundador de la empresa...</p>
-                <p>Descripción general de la empresa con texto hipotético...</p>
+                <h3>Profesional</h3>
+                <p>Experiencia y rol...</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- EQUIPO -->
-    <section id="equipo" class="tarjeta">
-        <div class="titulo-vertical">EQUIPO</div>
-
-        <div class="contenido-tarjeta equipo">
-            <div class="miembro">
-                <img src="img/persona.jpg">
-                <div>
-                    <h3>Nombre del profesional</h3>
-                    <p>Rol y experiencia del trabajador...</p>
-                </div>
-            </div>
+<section id="servicios" class="tarjeta">
+    <div class="titulo-vertical">SERVICIOS</div>
+    <div class="contenido-tarjeta servicios">
+        <div class="servicio">
+            <img src="img/servicio1.jpg">
+            <h3>Servicio</h3>
+            <p>Descripción...</p>
         </div>
-    </section>
-
-    <!-- SERVICIOS -->
-    <section id="servicios" class="tarjeta">
-        <div class="titulo-vertical">SERVICIOS</div>
-
-        <div class="contenido-tarjeta servicios">
-            <div class="servicio">
-                <img src="img/servicio1.jpg">
-                <h3>Servicio 1</h3>
-                <p>Descripción del servicio...</p>
-            </div>
-            <div class="servicio">
-                <img src="img/servicio2.jpg">
-                <h3>Servicio 2</h3>
-                <p>Descripción del servicio...</p>
-            </div>
+        <div class="servicio">
+            <img src="img/servicio2.jpg">
+            <h3>Servicio</h3>
+            <p>Descripción...</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- CONTACTOS -->
-    <section id="contactos" class="tarjeta">
-        <div class="titulo-vertical">CONTACTOS</div>
-
-        <div class="contenido-tarjeta">
-            <p>Nombre del contacto</p>
-            <p>Teléfono</p>
-
-            <a class="btn-whatsapp" href="https://wa.me/5355555555" target="_blank">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-        </div>
-    </section>
+<section id="contactos" class="tarjeta">
+    <div class="titulo-vertical">CONTACTOS</div>
+    <div class="contenido-tarjeta">
+        <p>Nombre del contacto</p>
+        <p>Teléfono</p>
+        <a class="btn-whatsapp" href="https://wa.me/5355555555" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+    </div>
+</section>
 
 </main>
 
-<!-- BOTÓN DOSSIER -->
 <section class="dossier">
     <a href="docs/dossier.pdf" download>Descargar dossier</a>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
     <p>Estevez Solutions — Somos tu solución</p>
 </footer>
 
-<!-- SCRIPTS -->
 <script src="scripts.js"></script>
-
 </body>
 </html>
