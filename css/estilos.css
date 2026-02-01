@@ -15,7 +15,7 @@ body {
     background: #e0e0e0;
     text-align: center;
     padding: 20px;
-    border-radius: 0 0 15px 15px;
+    border-radius: 0; /* RECTANGULAR */
 }
 
 .logo {
@@ -40,7 +40,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 0; /* RECTANGULAR */
 }
 
 .overlay {
@@ -50,7 +50,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 15px;
     padding: 0 10px;
     text-align: center;
 }
@@ -61,13 +60,13 @@ body {
     line-height: 1.2;
 }
 
-/* TARJETAS */
+/* TARJETAS - BORDES SUAVES */
 .tarjeta {
     display: flex;
     background: #fff;
     margin: 12px 0;
     box-shadow: 0 4px 15px rgba(0,0,0,.1);
-    border-radius: 15px;
+    border-radius: 15px; /* SUAVES */
     overflow: hidden;
 }
 
@@ -153,13 +152,12 @@ body {
     background: #e0e0e0;
     text-align: center;
     padding: 20px;
-    border-radius: 15px 15px 0 0;
+    border-radius: 0; /* RECTANGULAR */
 }
 
 /* RESPONSIVE */
 @media (max-width:768px){
 
-    /* HERO siempre ocupa toda la pantalla horizontal */
     .hero {
         height: 50vh;
         border-radius: 0;
@@ -173,7 +171,6 @@ body {
         font-size: 2rem;
     }
 
-    /* TARJETAS se apilan verticalmente */
     .tarjeta {
         flex-direction: column;
     }
