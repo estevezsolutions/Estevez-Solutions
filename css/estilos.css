@@ -76,18 +76,28 @@ body {
 /* =========================
    TARJETAS
 ========================= */
+/* =========================
+   TARJETAS
+========================= */
 .tarjeta {
     width: 100%;
-    background: #ffffff;
-    margin: 14px 0;
-    padding: 28px 24px 28px 70px;
+    background: #ffffff;           /* fondo blanco */
+    margin: 12px 0;                /* separación entre tarjetas */
+    padding: 28px 24px 28px 70px; /* espacio interno */
     position: relative;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    animation: fadeUp 0.8s ease forwards;
+    border-radius: 18px;           /* bordes suaves */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08); /* relieve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* TÍTULO VERTICAL */
+.tarjeta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   TÍTULO VERTICAL DE LAS TARJETAS
+========================= */
 .titulo-vertical {
     position: absolute;
     left: 0;
@@ -96,18 +106,15 @@ body {
     width: 50px;
     background: #ff8c00;
     color: #fff;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 600;
     letter-spacing: 1px;
-}
-
-/* CONTENIDO TARJETA */
-.contenido-tarjeta {
-    width: 100%;
+    
+    /* LECTURA DE ABAJO HACIA ARRIBA */
+    writing-mode: vertical-lr;       /* cambia de rl a lr */
+    text-orientation: mixed;         /* mantiene letras normales */
 }
 
 /* =========================
