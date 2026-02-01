@@ -6,23 +6,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #f4f4f4;
+    background: #f2f2f2;
     color: #333;
-    position: relative;
-}
-
-/* SILUETA EDIFICIO */
-body::after {
-    content: "";
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 40%;
-    height: 80%;
-    background: url("img/edificio.png") no-repeat right bottom;
-    background-size: contain;
-    opacity: 0.08;
-    z-index: -1;
 }
 
 /* HEADER */
@@ -33,12 +18,11 @@ body::after {
 }
 
 .logo-area img {
-    max-width: 140px;
+    width: 140px;
 }
 
 .slogan {
     display: block;
-    margin-top: 5px;
     color: #f28c28;
     font-weight: 600;
 }
@@ -47,21 +31,19 @@ body::after {
 .menu-flotante {
     display: flex;
     justify-content: center;
-    gap: 12px;
-    position: sticky;
-    top: 10px;
+    gap: 10px;
+    margin-top: -18px;
     z-index: 10;
 }
 
 .menu-flotante a {
-    padding: 10px 16px;
-    border: 1px solid #f28c28;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #f28c28;
-    font-weight: 600;
     background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 1px solid #f28c28;
+    padding: 10px 16px;
+    color: #f28c28;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
 }
 
 .menu-flotante a.activo {
@@ -77,12 +59,12 @@ body::after {
 }
 
 .hero-overlay {
+    background: rgba(60,60,60,.6);
     position: absolute;
     inset: 0;
-    background: rgba(80,80,80,0.55);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .hero h1 {
@@ -91,40 +73,30 @@ body::after {
     text-align: center;
 }
 
-/* CONTENIDO */
-.contenido {
-    width: 100%;
-}
-
 /* TARJETAS */
 .tarjeta {
     display: flex;
-    width: 100%;
     background: #fff;
-    margin: 8px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    animation: aparecer 0.8s ease;
+    margin: 6px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
 }
 
 /* TÍTULO VERTICAL */
 .titulo-vertical {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    background: transparent;
+    border-right: 4px solid #f28c28;
+    padding: 20px 10px;
     color: #f28c28;
     font-weight: 700;
-    letter-spacing: 2px;
-    padding: 20px 10px;
-    border-right: 4px solid #f28c28;
 }
 
-/* CONTENIDO TARJETA */
+/* CONTENIDO */
 .contenido-tarjeta {
     padding: 25px;
     flex: 1;
 }
 
-/* BIO */
 .bio {
     display: flex;
     gap: 20px;
@@ -132,33 +104,20 @@ body::after {
 
 .bio img {
     width: 140px;
-    border-radius: 6px;
 }
 
-/* EQUIPO */
 .miembro {
     display: flex;
     gap: 15px;
 }
 
-.miembro img {
-    width: 100px;
-    border-radius: 6px;
-}
-
-/* SERVICIOS */
 .servicios {
     display: flex;
     gap: 15px;
 }
 
-.servicio {
-    flex: 1;
-}
-
 .servicio img {
     width: 100%;
-    border-radius: 6px;
 }
 
 /* WHATSAPP */
@@ -166,10 +125,8 @@ body::after {
     display: inline-block;
     margin-top: 10px;
     padding: 6px 10px;
-    font-size: 0.85rem;
-    color: #25D366;
     border: 1px solid #25D366;
-    border-radius: 4px;
+    color: #25D366;
     text-decoration: none;
 }
 
@@ -180,11 +137,10 @@ body::after {
 }
 
 .dossier a {
-    padding: 12px 22px;
     background: #f28c28;
+    padding: 12px 22px;
     color: #fff;
     text-decoration: none;
-    border-radius: 4px;
 }
 
 /* FOOTER */
@@ -194,31 +150,8 @@ body::after {
     padding: 20px;
 }
 
-/* ANIMACIÓN */
-@keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* RESPONSIVE */
-@media (max-width: 768px) {
-
-    .hero h1 {
-        font-size: 2rem;
-        padding: 0 15px;
-    }
-
-    .menu-flotante {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-    }
-
+@media(max-width:768px){
     .tarjeta {
         flex-direction: column;
     }
