@@ -97,6 +97,7 @@ body {
     box-shadow: 0 12px 25px rgba(0,0,0,0.12);
 }
 
+
 /* =========================
    TÍTULO VERTICAL DE LAS TARJETAS
 ========================= */
@@ -112,12 +113,12 @@ body {
     color: #ff8c00;           /* color naranja */
     font-weight: 600;
     letter-spacing: 1px;
-    
-    /* LECTURA DE ABAJO HACIA ARRIBA */
-    writing-mode: vertical-lr;   
-    text-orientation: mixed;     
-}
 
+    /* LECTURA DE ABAJO HACIA ARRIBA */
+    writing-mode: vertical-rl;    /* vertical, de derecha a izquierda */
+    transform: rotate(180deg);    /* invierte la lectura para abajo hacia arriba */
+    text-orientation: mixed;      /* mantiene letras normales */
+}
 /* =========================
    BIO / QUIÉNES SOMOS
 ========================= */
