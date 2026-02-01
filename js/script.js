@@ -1,4 +1,4 @@
-const animatedElements = document.querySelectorAll('.animate');
+const elements = document.querySelectorAll('.animate');
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -6,8 +6,6 @@ const observer = new IntersectionObserver(entries => {
             entry.target.classList.add('visible');
         }
     });
-}, {
-    threshold: 0.15
-});
+}, { threshold: 0.15 });
 
-animatedElements.forEach(el => observer.observe(el));
+elements.forEach(el => observer.observe(el));
