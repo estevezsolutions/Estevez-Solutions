@@ -1,5 +1,4 @@
-
-  * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,7 +15,6 @@ body {
     background: #e0e0e0;
     text-align: center;
     padding: 20px;
-    border-radius: 0 0 15px 15px;
 }
 
 .logo {
@@ -30,6 +28,31 @@ body {
     font-weight: 600;
 }
 
+/* MENÚ */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px;
+    border-bottom: 2px solid #f28c28;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #f28c28;
+    padding: 8px 12px;
+    border: 1px solid #f28c28;
+    border-radius: 4px;
+    font-weight: 600;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.menu a.activo {
+    background: #f28c28;
+    color: #fff;
+}
+
 /* HERO */
 .hero {
     height: 70vh;
@@ -38,7 +61,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 15px;
 }
 
 .overlay {
@@ -48,7 +70,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 15px;
 }
 
 .hero h1 {
@@ -61,10 +82,8 @@ body {
 .tarjeta {
     display: flex;
     background: #fff;
-    margin: 12px 0;
-    box-shadow: 0 4px 15px rgba(0,0,0,.1);
-    border-radius: 15px;
-    overflow: hidden;
+    margin: 6px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
 }
 
 /* TÍTULO VERTICAL */
@@ -75,7 +94,6 @@ body {
     padding: 20px 10px;
     font-weight: 700;
     color: #f28c28;
-    background: #fff;
 }
 
 /* CONTENIDO TARJETA */
@@ -87,34 +105,31 @@ body {
 .bio {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .bio img {
     width: 140px;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 .miembro {
     display: flex;
     gap: 15px;
-    flex-wrap: wrap;
 }
 
 .miembro img {
     width: 100px;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 .servicios {
     display: flex;
     gap: 15px;
-    flex-wrap: wrap;
 }
 
 .servicio img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
 /* WHATSAPP */
@@ -140,7 +155,7 @@ body {
     background: #f28c28;
     color: #fff;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 /* FOOTER */
@@ -148,7 +163,6 @@ body {
     background: #e0e0e0;
     text-align: center;
     padding: 20px;
-    border-radius: 15px 15px 0 0;
 }
 
 /* RESPONSIVE */
