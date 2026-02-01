@@ -16,6 +16,9 @@
 </head>
 <body>
 
+<!-- ===== FONDO SILUETA ===== -->
+<div class="bg-building"></div>
+
 <!-- ================= HEADER ================= -->
 <header class="header">
     <div class="logo-container">
@@ -24,9 +27,9 @@
     </div>
 
     <nav class="nav">
-        <a href="#inicio">Inicio</a>
+        <a href="#inicio" class="active">Inicio</a>
         <a href="#quienes-somos">Quiénes Somos</a>
-        <a href="#equipo">Equipo de Trabajo</a>
+        <a href="#equipo">Equipo</a>
         <a href="#servicios">Servicios</a>
         <a href="#contactos">Contactos</a>
     </nav>
@@ -35,20 +38,13 @@
 <main>
 
 <!-- ================= HERO ================= -->
-<section class="hero">
-    <h1 class="hero-title animate">Soluciones profesionales que construyen confianza</h1>
-    <p class="hero-subtitle animate">
-        Texto introductorio hipotético que transmite solidez, experiencia y visión empresarial.
-    </p>
-</section>
-
-<!-- ================= INICIO ================= -->
-<section id="inicio" class="section">
-    <div class="card animate">
-        <h2>Inicio</h2>
+<section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content animate">
+        <h1>Soluciones profesionales que construyen confianza</h1>
         <p>
-            Texto institucional hipotético donde se presenta la empresa, su enfoque profesional
-            y su compromiso con la calidad, la eficiencia y los resultados.
+            Texto introductorio hipotético que comunica solidez, experiencia,
+            enfoque estratégico y compromiso con la calidad.
         </p>
     </div>
 </section>
@@ -56,22 +52,23 @@
 <!-- ================= QUIÉNES SOMOS ================= -->
 <section id="quienes-somos" class="section">
 
-    <div class="card profile-card animate">
-        <img src="img/dueño.jpg" alt="Director General">
-        <div>
-            <h2>Director General</h2>
-            <p>
-                Biografía breve del fundador de Estevez Solutions, destacando su trayectoria,
-                liderazgo técnico y visión estratégica.
-            </p>
-        </div>
-    </div>
+    <div class="card full-width animate">
+        <div class="card-title-vertical">QUIÉNES SOMOS</div>
 
-    <div class="card animate">
-        <h2>Quiénes Somos</h2>
+        <div class="profile">
+            <img src="img/dueño.jpg" alt="Director General">
+            <div>
+                <h3>Director General</h3>
+                <p>
+                    Biografía breve del fundador de la empresa, resaltando experiencia,
+                    liderazgo técnico y visión estratégica.
+                </p>
+            </div>
+        </div>
+
         <p>
-            Descripción institucional de la empresa: origen, misión, valores,
-            filosofía de trabajo y proyección empresarial.
+            Descripción institucional de Estevez Solutions: origen, misión,
+            valores, filosofía de trabajo y proyección empresarial.
         </p>
     </div>
 
@@ -79,80 +76,85 @@
 
 <!-- ================= EQUIPO ================= -->
 <section id="equipo" class="section">
-    <div class="card animate">
-        <h2>Equipo de Trabajo</h2>
 
-        <div class="team-card animate">
-            <img src="img/trabajador1.jpg" alt="Trabajador">
+    <div class="card full-width animate">
+        <div class="card-title-vertical">EQUIPO</div>
+
+        <div class="team-card">
+            <img src="img/trabajador1.jpg">
             <div>
                 <h3>Nombre del Especialista</h3>
-                <p>Rol, experiencia y función dentro de la empresa.</p>
+                <p>Rol y experiencia profesional.</p>
             </div>
         </div>
 
-        <div class="team-card animate">
-            <img src="img/trabajador2.jpg" alt="Trabajador">
+        <div class="team-card">
+            <img src="img/trabajador2.jpg">
             <div>
                 <h3>Nombre del Especialista</h3>
-                <p>Rol, experiencia y función dentro de la empresa.</p>
+                <p>Rol y experiencia profesional.</p>
             </div>
         </div>
 
-        <div class="team-card animate">
-            <img src="img/trabajador3.jpg" alt="Trabajador">
+        <div class="team-card">
+            <img src="img/trabajador3.jpg">
             <div>
                 <h3>Nombre del Especialista</h3>
-                <p>Rol, experiencia y función dentro de la empresa.</p>
+                <p>Rol y experiencia profesional.</p>
             </div>
         </div>
-
     </div>
+
 </section>
 
 <!-- ================= SERVICIOS ================= -->
 <section id="servicios" class="section">
-    <div class="card animate">
-        <h2>Servicios</h2>
+
+    <div class="card full-width animate">
+        <div class="card-title-vertical">SERVICIOS</div>
 
         <div class="services-grid">
 
-            <div class="service-card animate">
-                <img src="img/servicio1.jpg" alt="Servicio">
-                <h3>Servicio Profesional</h3>
-                <p>Descripción breve y clara del servicio ofrecido.</p>
+            <div class="service-card">
+                <img src="img/servicio1.jpg">
+                <h4>Servicio Profesional</h4>
+                <p>Descripción breve del servicio.</p>
             </div>
 
-            <div class="service-card animate">
-                <img src="img/servicio2.jpg" alt="Servicio">
-                <h3>Gestión Integral</h3>
-                <p>Texto hipotético explicando el alcance del servicio.</p>
+            <div class="service-card">
+                <img src="img/servicio2.jpg">
+                <h4>Gestión Integral</h4>
+                <p>Descripción breve del servicio.</p>
             </div>
 
-            <div class="service-card animate">
-                <img src="img/servicio3.jpg" alt="Servicio">
-                <h3>Asesoría Técnica</h3>
-                <p>Descripción profesional y concisa del servicio.</p>
+            <div class="service-card">
+                <img src="img/servicio3.jpg">
+                <h4>Asesoría Técnica</h4>
+                <p>Descripción breve del servicio.</p>
             </div>
 
         </div>
     </div>
+
 </section>
 
 <!-- ================= CONTACTOS ================= -->
 <section id="contactos" class="section">
-    <div class="card animate">
-        <h2>Contactos</h2>
+
+    <div class="card full-width animate">
+        <div class="card-title-vertical">CONTACTOS</div>
 
         <p>Nombre del contacto – Cargo</p>
-        <a class="whatsapp-btn" href="https://wa.me/0000000000" target="_blank">
-            <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+        <a class="whatsapp-btn small" href="https://wa.me/0000000000" target="_blank">
+            <i class="fab fa-whatsapp"></i>
         </a>
 
         <p>Nombre del contacto – Cargo</p>
-        <a class="whatsapp-btn" href="https://wa.me/0000000000" target="_blank">
-            <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+        <a class="whatsapp-btn small" href="https://wa.me/0000000000" target="_blank">
+            <i class="fab fa-whatsapp"></i>
         </a>
     </div>
+
 </section>
 
 <!-- ================= DOSSIER ================= -->
@@ -164,7 +166,6 @@
 
 </main>
 
-<!-- ================= FOOTER ================= -->
 <footer class="footer">
     <p>Estevez Solutions © 2026</p>
     <p>Somos tu solución</p>
