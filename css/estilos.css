@@ -265,3 +265,14 @@ body {
         font-size: 0.75rem;
     }
 }
+/* Optimización de renderizado */
+.hero,
+.tarjeta,
+.servicio {
+    will-change: transform, opacity;
+}
+
+/* Mejora scroll móvil */
+html {
+    scroll-behavior: smooth;
+}
